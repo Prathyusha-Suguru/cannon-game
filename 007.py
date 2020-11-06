@@ -7,7 +7,7 @@ from freegames import vector
 ball=vector(-200,-200)
 speed=vector(0,0)
 targets = []
-color_list = ['red','green','blue','yellow','orange','purple']
+
 
 
 def tap(x,y):
@@ -28,7 +28,7 @@ def draw():
 
     for target in targets:
         goto(target.x,target.y)
-        dot(20,random.choice(color_list))
+        dot(20,'blue')
 
     if inside(ball):
         goto(ball.x,ball.y)
